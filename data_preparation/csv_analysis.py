@@ -1,7 +1,7 @@
-import numpy as np
+import matplotlib.pyplot as plt
 import pandas as pd 
 
-dataset = pd.read_csv("weather_data.csv")
+dataset = pd.read_csv("data_preparation/weather_data.csv")
 
 X = dataset.iloc[: , :].values
 y = dataset.iloc[: , 0].values
@@ -18,3 +18,5 @@ print(dataset.isnull().mean() * 100)
 print("==================================================================")
 duplicates = dataset.duplicated().sum()
 print(f"Number of duplicate rows: {duplicates}")
+
+
