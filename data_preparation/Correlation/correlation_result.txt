@@ -1,0 +1,7 @@
+                               Average Temperature (celsius)  Max Temperature (celsius)  Min Temperature (celsius)  Average Wind Speed (m/s)  Total Precipitation (mm)  Max Snow Depth (cm)
+Average Temperature (celsius)                       1.000000                   0.840191                   0.385678                 -0.022710                  0.121923            -0.451999
+Max Temperature (celsius)                           0.840191                   1.000000                  -0.006819                 -0.033322                  0.168030            -0.476602
+Min Temperature (celsius)                           0.385678                  -0.006819                   1.000000                  0.019046                 -0.011587             0.023425
+Average Wind Speed (m/s)                           -0.022710                  -0.033322                   0.019046                  1.000000                 -0.018364             0.033161
+Total Precipitation (mm)                            0.121923                   0.168030                  -0.011587                 -0.018364                  1.000000             0.128485
+Max Snow Depth (cm)                                -0.451999                  -0.476602                   0.023425                  0.033161                  0.128485             1.000000
