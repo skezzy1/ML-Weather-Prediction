@@ -1,14 +1,13 @@
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 import pandas as pd
 
-df = pd.read_csv("data_preparation/data.csv")
+df = pd.read_csv("data_preparation/csv/processed_final.csv")
 
-# Select numeric columns
+
 df_numeric = df.select_dtypes(include=["number"])
 
-# Check for NaN or infinite values and drop rows or fill them
-df_numeric = df_numeric.dropna()  # Drop rows with NaN values
-df_numeric = df_numeric[~df_numeric.isin([float('inf'), -float('inf')]).any(axis=1)]  # Drop rows with infinite values
+df_numeric = df_numeric.dropna() 
+df_numeric = df_numeric[~df_numeric.isin([float('inf'), -float('inf')]).any(axis=1)] 
 
 # Calculate VIF
 vif_data = pd.DataFrame()
