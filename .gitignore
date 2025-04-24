@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 .env
 cities.txtmodels/RandomForestModel/rf_model.pkl
+=======
+.envmodels/RandomForestModel/rf_model.pkl
+models/RandomForestModel/rf_model.pkl
+>>>>>>> c324b03360a804656f1794e7733593bf7f40e815
