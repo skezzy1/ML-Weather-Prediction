@@ -16,10 +16,10 @@ target = 'Total Precipitation (mm)'
 X = data[features]
 y = data[target]
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 
-rf_model = RandomForestRegressor(n_estimators=500, random_state=0)
+rf_model = RandomForestRegressor(n_estimators=1000, random_state=42)
 rf_model.fit(X_train, y_train)
 
 
@@ -51,8 +51,8 @@ mse_real = mean_squared_error(y_test_real, rf_predictions_real)
 mae_real = mean_absolute_error(y_test_real, rf_predictions_real)
 
 print(f"\n🔁 Inverse Transformed Errors:")
-print(f"MSE (real scale): {mse_real:.2f}")
-print(f"MAE (real scale): {mae_real:.2f}")
+print(f"MSE: {mse_real:.2f}")
+print(f"MAE: {mae_real:.2f}")
 
 plt.figure(figsize=(12, 6))
 plt.scatter(y_test_real, rf_predictions_real, color='green')
