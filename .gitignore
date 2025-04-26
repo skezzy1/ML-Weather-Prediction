@@ -1,4 +1,4 @@
 .envmodels/RandomForestModel/rf_model.pkl
-models/RandomForestModel/rf_model.pkl
-models/RandomForestModel/rf_model.pkl
+models/RandomForest/rf_model.pkl
 cities.txt
+.env
